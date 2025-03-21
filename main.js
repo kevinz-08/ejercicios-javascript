@@ -1,10 +1,12 @@
-const contraseñaCorrecta = "seguro123";
+let numero = parseFloat(prompt("Ingresa un número:"));
 
-let edad = parseInt(prompt("Ingresa tu edad:"));
-let contrasena = prompt("Ingresa la contraseña:");
-
- if (edad > 18 && contrasena === contraseñaCorrecta) {
-     console.log("Acceso concedido");
+if (numero > 0) {
+     console.log("El número es positivo.");
+ } else if (numero < 0) {
+     console.log("El numero es negativo.");
+} else if (numero == 0) {
+    console.log("El numero es cero.");
  } else {
-     console.log("Acceso denegado, verifica tu edad o contraseña.");
+    console.log("El numero no es un número real o no es un numero");
  }
+ 

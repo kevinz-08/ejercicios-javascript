@@ -12,8 +12,8 @@
 4. **Ajuste de inversión**: Multiplica el presupuesto restante por `1.05` (`*=`) para reflejar un **rendimiento del 5%**.
 5. **Pago de impuestos**: Reduce el presupuesto en un **30%** (`/=`).
 
-Al final, imprime cuánto dinero queda disponible.
 
+Al final, imprime cuánto dinero queda disponible.
 ------
 
 ## **Simulación de una Cuenta Bancaria**

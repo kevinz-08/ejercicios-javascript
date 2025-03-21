@@ -1,27 +1,18 @@
-let presupuesto  = Number(5000);
-alert ("Su presupuesto es de $5000")
+let saldoInicial = Number(10000);
+alert("Su saldo inicial es de $"+ saldoInicial);
 
-// compraSuper
-presupuesto -= 1000;
-console.log("Su presupuesto ahora es: $"+ presupuesto);
+saldoInicial += 2000;
+alert("Se recibo un Deposito");
+console.log(("Su saldo actual es de $"+ saldoInicial));
 
-// pagoServicios
-presupuesto -= 800;
-console.log("Su presupuesto ahora es: $"+ presupuesto);
+saldoInicial -= 5000;
+alert("Se retira un monto de $5000");
+console.log(("Su saldo actual es de $"+ saldoInicial));
 
-// ingresoAdicional
-presupuesto += 1500;
-console.log("Su presupuesto ahora es: $"+ presupuesto);
+saldoInicial *= 0.98;
+alert("Se cobra una comsion bancaria del 2%");
+console.log(("Su saldo actual es de $"+ saldoInicial));
 
-// ajusteInversion
-presupuesto *= 1.05;
-console.log("Su presupuesto ahora es: $"+ presupuesto);
-
-// pagoImpuestos
-presupuesto /= 1.3;
-console.log("Su presupuesto ahora es: $"+ presupuesto.toFixed(2));
-
-console.log("Presupuesto Final:",  presupuesto.toFixed(2));
-
-
-
+saldoInicial /=  3;
+alert("Se divide el saldo en 3 cuentas diferentes");
+console.log(("El saldo actual de cada una de las 3 cuentas es de $"+ saldoInicial.toFixed(3)));

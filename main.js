@@ -1,11 +1,19 @@
-let tragosTomados = Number(prompt("sr, cuantos tragos a tomado?"));
+let peliculaElegida = prompt(
+    "Elige tu película favorita de la siguiente lista:\n" +
+    "1. Avengers EndGame\n" +
+    "2. El paseo 5\n" +
+    "3. Las esquinas de la mesa redonda\n" +
+    "4. Avatar\n" +
+    "5. Coco\n"
+);
 
-if (tragosTomados > 0) {
-    console.log("Sr, debido a que a ingerido alcohol, usted no podra conducir");    
+if (peliculaElegida < 1 ){
+    alert("La opción ingresada no es válida. Por favor, elige una opción correcta");
 }
-else if (tragosTomados == 0){
-    console.log("Nos alegra que seas un conductor responsable");
+else if (peliculaElegida > 5 ){
+    alert("La opción ingresada no es válida. Por favor, elige una opción correcta");
 }else{
-    console.log("El valor ingresado no es valido");
-    
+    alert("Has elegido: " + peliculaElegida);
+    console.log("Película seleccionada:", peliculaElegida);
 }
+

@@ -1,18 +1,19 @@
-let saldoInicial = Number(10000);
-alert("Su saldo inicial es de $"+ saldoInicial);
+let barraEnergia = Number(100);
+alert("la barra incial de el jugador es de "+ barraEnergia);
 
-saldoInicial += 2000;
-alert("Se recibo un Deposito");
-console.log(("Su saldo actual es de $"+ saldoInicial));
+barraEnergia += 50;
+alert("Gano un bonus");
 
-saldoInicial -= 5000;
-alert("Se retira un monto de $5000");
-console.log(("Su saldo actual es de $"+ saldoInicial));
+barraEnergia -= 20;
+alert("Perdio un punto de energia");
 
-saldoInicial *= 0.98;
-alert("Se cobra una comsion bancaria del 2%");
-console.log(("Su saldo actual es de $"+ saldoInicial));
+barraEnergia *= 2;
+alert("Gano un bonus de energia(se duplico)");
 
-saldoInicial /=  3;
-alert("Se divide el saldo en 3 cuentas diferentes");
-console.log(("El saldo actual de cada una de las 3 cuentas es de $"+ saldoInicial.toFixed(3)));
+barraEnergia /= 1.25;
+alert("El jugador consumio el 25% de su energia");
+
+barraEnergia %= 7;
+alert("El jugador aplico un ajuste para redondear la energia")
+
+console.log("La barra actual de energia es = "+ barraEnergia);

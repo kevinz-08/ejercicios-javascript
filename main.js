@@ -1,19 +1,18 @@
-let barraEnergia = Number(100);
-alert("la barra incial de el jugador es de "+ barraEnergia);
+let unidadesDisponibles = 200;
+alert("El stock inicial de la tienda es de: " + unidadesDisponibles);
 
-barraEnergia += 50;
-alert("Gano un bonus");
+unidadesDisponibles += 50;
+alert("Se recibieron 50 unidades nuevas. Stock actual: " + unidadesDisponibles);
 
-barraEnergia -= 20;
-alert("Perdio un punto de energia");
+let unidadesVendidas = 30 * 2;
+unidadesDisponibles -= unidadesVendidas;
+alert("Se vendieron 30 unidades con la oferta 2x1. Stock actual: " + unidadesDisponibles);
 
-barraEnergia *= 2;
-alert("Gano un bonus de energia(se duplico)");
+let unidadesPorAlmacen = unidadesDisponibles / 5;
+alert("Se distribuyeron las unidades entre 5 almacenes. Cada uno recibe: " + unidadesPorAlmacen);
 
-barraEnergia /= 1.25;
-alert("El jugador consumio el 25% de su energia");
+let unidadesDescuento = unidadesDisponibles % 6;
+alert("Los productos restantes para descuentos son: " + unidadesDescuento);
 
-barraEnergia %= 7;
-alert("El jugador aplico un ajuste para redondear la energia")
-
-console.log("La barra actual de energia es = "+ barraEnergia);
+console.log("Stock final por almacén:", unidadesPorAlmacen);
+console.log("Unidades en descuentos:", unidadesDescuento);

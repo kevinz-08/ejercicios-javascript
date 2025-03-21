@@ -1,10 +1,13 @@
-const num = Number(prompt("Ingrese un numero:"));
-
-const resultado = isNaN(num)
-    ? "Error: No ingresaste un número válido."
-    : num % 2 === 0
-    ? `El número ${num} es par.`
-    : `El número ${num} es impar.`;
-
-alert(resultado);
-console.log(resultado);
+function clasificarEdad(edad) {
+    return (edad < 18) 
+        ? "Menor de edad" 
+        : (edad <= 65) 
+            ? "Adulto" 
+            : "Adulto mayor";
+}
+let edad = parseInt(prompt("Ingrese su edad:"));
+if (isNaN(edad)) {
+    console.log("Ingrese un numero valido.");
+} else {let clasificacion = clasificarEdad(edad);
+    console.log("Usted es: " + clasificacion);
+}
